@@ -1,0 +1,46 @@
+@font-face {
+  font-family: regular;
+  src: url(../assets/fonts/Heebo-Regular.ttf);
+}
+
+@font-face {
+  font-family: thin;
+  src: url(../assets/fonts/Heebo-Thin.ttf);
+}
+
+@font-face {
+  font-family: light;
+  src: url(../assets/fonts/Heebo-Light.ttf);
+}
+
+@font-face {
+  font-family: medium;
+  src: url(../assets/fonts/Heebo-Medium.ttf);
+}
+
+@font-face {
+  font-family: bold;
+  src: url(../assets/fonts/Heebo-Bold.ttf);
+}
+
+//font stack
+
+$font-regular: regular, sans-serif;
+$font-thin: thin, sans-serif;
+$font-light: light, sans-serif;
+
+$font-medium: medium, sans-serif;
+$font-bold: bold, sans-serif;
+
+//color
+
+$primary-color: #fd346e;
+$secondary-color: #3a3a3a;
+$third-color: #7c00ff;
+$forth-color: #ffd000;
+
+$background: #fafafa;
+$background-secondary: #0a0909;
+
+$primary-font: #000000;
+$secondary-font: #2a3348;

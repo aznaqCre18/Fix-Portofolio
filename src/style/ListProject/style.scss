@@ -1,0 +1,114 @@
+@import "./../config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#project-container {
+  padding: 3% 5%;
+  display: flex;
+  justify-content: center;
+
+  .container-full-card {
+    text-align: center;
+    cursor: pointer;
+
+    .content {
+      margin-bottom: 2.8rem;
+      h1 {
+        font-family: $font-bold;
+        font-size: 1.8rem;
+        margin-top: 1.2rem;
+        margin-bottom: -5px;
+        transition: 0.3s ease-out 0.3s;
+      }
+
+      p {
+        font-family: $font-light;
+        font-size: 0.8rem;
+        transition: 0.3s ease-out 0.1s;
+      }
+    }
+
+    &:hover h1 {
+      color: $third-color;
+    }
+
+    &:hover p {
+      font-weight: 600;
+    }
+  }
+
+  .left-side {
+    margin-right: 20px;
+    .title {
+      margin-bottom: 5%;
+      h3 {
+        font-family: $font-thin;
+        margin-left: 2px;
+      }
+      h1 {
+        font-family: $font-bold;
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+      }
+    }
+  }
+
+  .right-side {
+    margin-left: 20px;
+
+    .more-project {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 1.5rem;
+      transition: 0.3s ease-out;
+
+      .inner-more {
+        display: flex;
+        justify-content: flex-end;
+        div {
+          font-family: $font-medium;
+          font-size: 18px;
+          transition: 0.3s ease-out;
+          position: relative;
+          display: inline-block;
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: black;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out 0.3s;
+          }
+
+          &:hover::before {
+            transform-origin: bottom left;
+            transform: scaleX(1);
+          }
+        }
+
+        img {
+          margin-left: 10px;
+          transition: 0.3s ease-out;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:hover img {
+          transform: translateX(30px);
+          opacity: 0.2;
+        }
+      }
+    }
+  }
+}

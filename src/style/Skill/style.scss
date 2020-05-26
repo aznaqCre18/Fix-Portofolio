@@ -1,0 +1,128 @@
+@import "./../config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-regular;
+  list-style-type: none;
+}
+
+#skill-container {
+  height: 132vh;
+  background-image: linear-gradient(54.65deg, #000000 0%, #363b44 100%);
+  padding: 40px;
+
+  color: white;
+  h1 {
+    color: white;
+    font-size: 1.8rem;
+    width: 50%;
+    margin-bottom: 28px;
+  }
+
+  .skill-list {
+    display: flex;
+
+    .design {
+      margin-right: 40px;
+      margin-left: 12px;
+      width: 30%;
+
+      h3 {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        border-bottom: 5px solid white;
+        border-radius: 5px;
+        padding: 10px 0;
+      }
+      ul {
+        margin-left: 5px;
+        li {
+          padding: 15px 0;
+          text-transform: capitalize;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.623);
+        }
+      }
+    }
+
+    .develop {
+      margin-left: 40px;
+      width: 40%;
+      h3 {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        border-bottom: 5px solid white;
+        border-radius: 5px;
+        padding: 10px 0;
+      }
+
+      ul {
+        margin-left: 5px;
+
+        li {
+          padding: 15px 0;
+          text-transform: capitalize;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.623);
+        }
+      }
+    }
+  }
+
+  .experience {
+    padding-bottom: 5%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.623);
+    h5 {
+      padding-top: 3%;
+    }
+
+    .logo-list {
+      margin-left: 1%;
+      margin-top: 1%;
+      img {
+        margin: 0 15px;
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 5%;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo-container {
+        .logo {
+          font-size: 2rem;
+          font-family: $font-bold;
+          user-select: none;
+          &:hover {
+            color: $third-color;
+            cursor: pointer;
+          }
+        }
+
+        p {
+          font-size: 0.8rem;
+          font-family: $font-thin;
+        }
+      }
+
+      .media-social {
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+
+        img {
+          user-select: none;
+
+          &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

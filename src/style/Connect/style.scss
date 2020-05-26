@@ -1,0 +1,109 @@
+@import "./../config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-regular;
+}
+
+#connect-container {
+  min-height: 50vh;
+  background-color: $forth-color;
+  padding-bottom: 25px;
+
+  h1 {
+    font-size: 2.5rem;
+    font-family: $font-bold;
+    text-align: center;
+    padding-top: 5rem;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    .list-connect {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      height: 40vh;
+
+      .icon-container {
+        width: 22%;
+        padding: 0% 3%;
+        padding: 0 20px;
+        position: relative;
+        z-index: 2;
+        user-select: none;
+
+        .bg-image {
+          position: absolute;
+          background-image: linear-gradient(
+            59.07deg,
+            #ffd7d7 8.04%,
+            #ffffff 105.35%
+          );
+          width: 230px;
+          margin: 0 20px;
+          border-radius: 20px;
+          padding: 10px;
+          opacity: 1;
+          z-index: -1;
+          left: -10px;
+          height: 100%;
+          opacity: 0;
+          transition: 0.5s ease-out;
+          overflow: hidden;
+          box-shadow: 0 0 40px rgba(209, 208, 208, 0.417),
+            0 0 40px rgba(209, 208, 208, 0.417);
+
+          img {
+            float: right;
+            transform: translate(30px, -30px);
+            opacity: 0;
+            transition: 0.5s;
+            padding-top: 5px;
+            padding-right: 5px;
+          }
+        }
+        p {
+          font-size: 0.8rem;
+          color: $secondary-font;
+          padding: 10px;
+          width: 90%;
+        }
+
+        .inner {
+          img {
+            padding: 0 10px;
+            padding-top: 20px;
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:active {
+          opacity: 0.8;
+        }
+
+        &:hover p {
+          font-family: $font-medium;
+        }
+
+        &:hover .bg-image {
+          opacity: 1;
+        }
+
+        &:hover .bg-image > img {
+          transform: translate(0, 0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
