@@ -1,4 +1,4 @@
-@import "./../config";
+@import "./../config/config";
 
 * {
   margin: 0;
@@ -10,7 +10,7 @@
   padding: 3% 5%;
   display: flex;
   justify-content: center;
-
+  margin: auto;
   .container-full-card {
     text-align: center;
     cursor: pointer;

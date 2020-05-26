@@ -1,0 +1,134 @@
+@media (max-width: 450px) {
+  .container-nav {
+    .right-menu {
+      .contact-btn {
+        display: none !important;
+      }
+    }
+  }
+
+  div.inner-more {
+    div {
+      font-size: 14px !important;
+    }
+  }
+
+  .left-side {
+    .title {
+      h1 {
+        font-size: 1.1rem !important;
+        line-height: 1.3rem !important;
+      }
+    }
+  }
+
+  #connect-container {
+    h1 {
+      font-size: 2rem !important;
+    }
+  }
+
+  .list-connect {
+    grid-template-columns: repeat(2, 230px) !important;
+    .icon-container {
+      width: 100% !important;
+      padding: 0 0 !important;
+      margin: auto !important;
+
+      p {
+        width: 75% !important;
+      }
+
+      .bg-image {
+        width: 75% !important;
+        transform: translateX(10%) !important;
+      }
+    }
+  }
+
+  #skill-container {
+    h1 {
+      font-size: 1.5rem !important;
+    }
+  }
+
+  .footer {
+    .container {
+      flex-direction: column !important;
+
+      .logo-container {
+        text-align: center !important;
+        margin-bottom: 8% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .intro {
+    .intro-title {
+      font-size: 80% !important;
+    }
+
+    .intro-subtitle {
+      font-size: 1rem !important;
+    }
+  }
+
+  .list-connect {
+    grid-template-columns: repeat(2, 190px) !important;
+    .icon-container {
+      width: 100% !important;
+      padding: 0 0 !important;
+      margin: auto !important;
+
+      p {
+        width: 90% !important;
+      }
+
+      .bg-image {
+        width: 90% !important;
+        transform: translateX(-1%) !important;
+      }
+    }
+  }
+
+  #skill-container {
+    padding: 24px !important;
+
+    div.design {
+      h3 {
+        font-size: 1rem !important;
+      }
+
+      ul {
+        li {
+          font-size: 0.8rem !important;
+        }
+      }
+    }
+
+    div.develop {
+      h3 {
+        font-size: 1rem !important;
+      }
+
+      ul {
+        li {
+          font-size: 0.8rem !important;
+        }
+      }
+    }
+
+    .experience {
+      .logo-list {
+        img {
+          width: 8% !important;
+          height: 8% !important;
+          padding: 5px 0 !important;
+          margin: 0 10px !important;
+        }
+      }
+    }
+  }
+}

@@ -23,7 +23,7 @@ import {
 export default function index() {
   return (
     <div id="skill-container">
-      <h1>
+      <h1 data-aos="fade-right" data-aos-duration="200">
         Create and implement design into a website that looks good from the
         client side
       </h1>
@@ -32,22 +32,42 @@ export default function index() {
 
       <div className="skill-list">
         <div className="design">
-          <h3>design</h3>
+          <h3 data-aos="fade-left" data-aos-delay="200">
+            design
+          </h3>
           <ul>
-            <li>UI Design</li>
-            <li>web design</li>
-            <li>mobile design</li>
+            <li data-aos="fade-left" data-aos-delay="250">
+              UI Design
+            </li>
+            <li data-aos="fade-left" data-aos-delay="300">
+              web design
+            </li>
+            <li data-aos="fade-left" data-aos-delay="350">
+              mobile design
+            </li>
           </ul>
         </div>
 
         <div className="develop">
-          <h3>development</h3>
+          <h3 data-aos="fade-left" data-aos-delay="200">
+            development
+          </h3>
           <ul>
-            <li>React.js</li>
-            <li>React Native</li>
-            <li>HTML/CSS/JS</li>
-            <li>SASS</li>
-            <li>GraphQL ( Client Size )</li>
+            <li data-aos="fade-left" data-aos-delay="250">
+              React.js
+            </li>
+            <li data-aos="fade-left" data-aos-delay="300">
+              React Native
+            </li>
+            <li data-aos="fade-left" data-aos-delay="350">
+              HTML/CSS/JS
+            </li>
+            <li data-aos="fade-left" data-aos-delay="400">
+              SASS
+            </li>
+            <li data-aos="fade-left" data-aos-delay="450">
+              GraphQL ( Client Size )
+            </li>
           </ul>
         </div>
       </div>
@@ -55,17 +75,59 @@ export default function index() {
       {/* another com */}
 
       <div className="experience">
-        <h5>I EXPERIENCE IN</h5>
+        <h5 data-aos="fade-right" data-aos-duration="1000">
+          I EXPERIENCE IN
+        </h5>
         <div className="logo-list">
-          <img src={VsCode} alt="vs-code" />
-          <img src={ReactJs} alt="react-js" />
-          <img src={Js} alt="java-script" />
-          <img src={Html} alt="html" />
-          <img src={Css} alt="css" />
-          <img src={Sass} alt="sass" />
-          <img src={Bs} alt="bootstrap" />
-          <img src={Gql} alt="graphql" />
-          <img src={Figma} alt="figma" />
+          <img
+            src={VsCode}
+            alt="vs-code"
+            data-aos="fade-left"
+            data-aos-delay="800"
+          />
+          <img
+            src={ReactJs}
+            alt="react-js"
+            data-aos="fade-left"
+            data-aos-delay="900"
+          />
+          <img
+            src={Js}
+            alt="java-script"
+            data-aos="fade-left"
+            data-aos-delay="1000"
+          />
+          <img
+            src={Html}
+            alt="html"
+            data-aos="fade-left"
+            data-aos-delay="1100"
+          />
+          <img src={Css} alt="css" data-aos="fade-left" data-aos-delay="1200" />
+          <img
+            src={Sass}
+            alt="sass"
+            data-aos="fade-left"
+            data-aos-delay="1300"
+          />
+          <img
+            src={Bs}
+            alt="bootstrap"
+            data-aos="fade-left"
+            data-aos-delay="1400"
+          />
+          <img
+            src={Gql}
+            alt="graphql"
+            data-aos="fade-left"
+            data-aos-delay="1500"
+          />
+          <img
+            src={Figma}
+            alt="figma"
+            data-aos="fade-left"
+            data-aos-delay="1600"
+          />
         </div>
       </div>
 
@@ -73,12 +135,20 @@ export default function index() {
 
       <div className="footer">
         <div className="container">
-          <div className="logo-container">
+          <div
+            className="logo-container"
+            data-aos="fade-right"
+            data-aos-duration="900"
+          >
             <div className="logo">aznaqCre.</div>
             <p>azizaqibs@gmail.com</p>
             <p>+62 899 777 5669</p>
           </div>
-          <div className="media-social">
+          <div
+            className="media-social"
+            data-aos="fade-left"
+            data-aos-duration="900"
+          >
             <img src={Medium} alt="medium" />
             <img src={Github} alt="github" />
             <img src={Dribble} alt="dribble" />

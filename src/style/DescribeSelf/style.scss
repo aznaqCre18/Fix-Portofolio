@@ -1,4 +1,4 @@
-@import "./../config";
+@import "./../config/config";
 
 * {
   margin: 0;
@@ -23,6 +23,7 @@
     width: 100%;
     height: 80px;
     display: flex;
+    z-index: 3;
     // padding: 0 5%;
 
     .left-menu {
@@ -38,6 +39,7 @@
         font-family: $font-bold;
         margin-top: -5px;
         user-select: none;
+        z-index: 4;
 
         &:hover {
           cursor: pointer;
@@ -48,6 +50,7 @@
       .main-menu {
         width: 100%;
         margin-left: 10%;
+        z-index: 4;
         ul {
           display: flex;
           margin-left: 10%;
@@ -77,7 +80,6 @@
             &:hover::before {
               transform: scaleX(1);
               transform-origin: bottom left;
-              z-index: 10;
             }
 
             // &:hover {
@@ -93,7 +95,7 @@
       justify-content: flex-end;
       width: 55%;
       align-items: center;
-      z-index: 10;
+      z-index: 4;
       box-sizing: border-box;
 
       .contact-btn {
@@ -107,7 +109,6 @@
         border-radius: 12px;
         transition: 0.3s ease-in-out;
         user-select: none;
-        z-index: -1;
 
         &:hover {
           background-color: transparent;
@@ -168,7 +169,7 @@
         position: absolute;
         top: -100px;
         right: 0;
-        z-index: -1;
+        // z-index: -20;
       }
     }
   }
@@ -181,13 +182,15 @@
     position: absolute;
     width: 100%;
     background-color: rgb(22, 21, 21);
-    z-index: 10;
+    z-index: 2;
     color: white;
     height: 100vh;
     opacity: 0;
   }
 
-  // .navbar-container.show {
-
-  // }
+  .navbar-container.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

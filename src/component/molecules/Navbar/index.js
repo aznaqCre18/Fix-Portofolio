@@ -1,5 +1,5 @@
-import React from "react";
-import { TweenLite, Power3 } from "gsap";
+import React, { useEffect } from "react";
+import { TweenLite, Power3, gsap } from "gsap";
 
 import Burger from "./../../atoms/Burger";
 
@@ -66,7 +66,7 @@ export default function Navbar() {
   return (
     <>
       <div className="navbar-container">
-        <h1>Navbar Container</h1>
+        <h1>Cooming Soon</h1>
       </div>
       <div className="container-nav">
         <div className="left-menu">

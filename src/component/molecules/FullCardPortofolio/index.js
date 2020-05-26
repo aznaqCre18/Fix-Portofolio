@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import CardImage from "./../../atoms/portofolioCard";
 
-export default function index(props) {
+const CardComp = (props) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+    });
+  }, []);
   return (
-    <div className="container-full-card">
+    <div className="container-full-card" data-aos={props.aos}>
       <CardImage img={props.img} alt={props.title} />
       <div className="content">
         <h1>{props.title}</h1>
@@ -13,4 +20,6 @@ export default function index(props) {
       </div>
     </div>
   );
-}
+};
+
+export default CardComp;

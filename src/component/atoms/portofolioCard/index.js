@@ -2,10 +2,12 @@ import React from "react";
 
 import "./style.scss";
 
-export default function index(props) {
+const ImageCard = (props) => {
   return (
-    <div className="portofolio-container">
+    <div className="portofolio-container" data-aos="fade-right">
       <img src={props.img} alt={props.alt} />
     </div>
   );
-}
+};
+
+export default ImageCard;

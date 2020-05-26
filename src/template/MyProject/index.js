@@ -12,7 +12,7 @@ import {
   Breednder,
 } from "./../../assets/image/Project";
 
-export default function index() {
+const ListProject = () => {
   return (
     <div id="project-container">
       <div className="left-side">
@@ -27,6 +27,7 @@ export default function index() {
           title="Donation"
           type="Web App"
           stack="React.js, Apollo GraphQL, SASS"
+          aos="fade-right"
         />
 
         <FullCard
@@ -34,6 +35,7 @@ export default function index() {
           title="Chiketto"
           type="Web App"
           stack="React.js, Bootstrap, Node.js, Sequelize, MySQL"
+          aos="fade-right"
         />
 
         <FullCard
@@ -41,6 +43,7 @@ export default function index() {
           title="Mejik Academy"
           type="Web App"
           stack="React.js, Bootstrap, AntDesign, Apollo GraphQL"
+          aos="fade-right"
         />
       </div>
       <div className="right-side">
@@ -49,6 +52,7 @@ export default function index() {
           title="Sayur Box"
           type="Android App"
           stack="React Native, Native Base"
+          aos="fade-up-left"
         />
 
         <FullCard
@@ -56,6 +60,7 @@ export default function index() {
           title="Pokemon Pokedex"
           type="Web App"
           stack="React.js, AntDesign, PokeAPI"
+          aos="fade-up-left"
         />
 
         <FullCard
@@ -63,9 +68,10 @@ export default function index() {
           title="Breednder"
           type="Web App"
           stack="React.js, Bootstrap, Node.js, Sequelize, MySQL"
+          aos="fade-up-left"
         />
 
-        <div className="more-project">
+        <div className="more-project" data-aos="fade-left">
           <div className="inner-more">
             <div>See Detail Project on Github</div>
             <img src={RightArrow} alt="going to github" />
@@ -74,4 +80,6 @@ export default function index() {
       </div>
     </div>
   );
-}
+};
+
+export default ListProject;

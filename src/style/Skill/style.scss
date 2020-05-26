@@ -1,4 +1,4 @@
-@import "./../config";
+@import "./../config/config";
 
 * {
   margin: 0;
@@ -9,7 +9,7 @@
 }
 
 #skill-container {
-  height: 132vh;
+  height: 100%;
   background-image: linear-gradient(54.65deg, #000000 0%, #363b44 100%);
   padding: 40px;
 

@@ -1,0 +1,12 @@
+@import "./../config/responsif/responsive.laptop";
+@import "./../config/responsif/responsif.tablet";
+@import "./../config/responsif/responsif.large-mobile";
+@import "./../config/responsif/responsif.small-mobile";
+
+body {
+  overflow-x: hidden !important;
+}
+
+html {
+  overflow-x: hidden !important;
+}
