@@ -1,18 +1,23 @@
 import React from "react";
 
 export default function index(props) {
+  const goingTo = (link) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <div
       className="icon-container"
       data-aos="fade-up"
       data-aos-delay={props.delay}
+      onClick={() => goingTo(props.href)}
     >
-      <div className="bg-image">
+      <figure className="bg-image">
         <img src={props.link} alt="icon link" />
-      </div>
-      <div className="inner">
+      </figure>
+      <figure className="inner">
         <img src={props.icon} alt="icon media" />
-      </div>
+      </figure>
       <p>{props.content}</p>
     </div>
   );

@@ -65,7 +65,12 @@
   }
 
   #connect-container {
-    height: 80vh !important;
+    height: 70% !important;
+    padding-bottom: 10% !important;
+
+    h1 {
+      padding-top: 2rem !important;
+    }
   }
 
   .list-connect {
@@ -73,7 +78,8 @@
     grid-template-columns: repeat(2, 350px) !important;
     grid-template-rows: repeat(2, 60%) !important;
     justify-content: center !important;
-    transform: translate(0%, 30%);
+    transform: translate(0%, 0%);
+    height: 70% !important;
     .icon-container {
       padding: 50px;
       width: 100% !important;

@@ -7,10 +7,10 @@ import MainLanding from "./../../component/molecules/mainLanding";
 const DescribeSelf = () => {
   return (
     <>
-      <div id="main-container">
+      <section id="main-container">
         <Header />
         <MainLanding />
-      </div>
+      </section>
     </>
   );
 };

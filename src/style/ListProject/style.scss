@@ -11,33 +11,37 @@
   display: flex;
   justify-content: center;
   margin: auto;
-  .container-full-card {
-    text-align: center;
-    cursor: pointer;
+  a {
+    text-decoration: unset !important;
+    .container-full-card {
+      text-align: center;
+      cursor: pointer;
+      color: black !important;
 
-    .content {
-      margin-bottom: 2.8rem;
-      h1 {
-        font-family: $font-bold;
-        font-size: 1.8rem;
-        margin-top: 1.2rem;
-        margin-bottom: -5px;
-        transition: 0.3s ease-out 0.3s;
+      .content {
+        margin-bottom: 2.8rem;
+        h1 {
+          font-family: $font-bold;
+          font-size: 1.8rem;
+          margin-top: 1.2rem;
+          margin-bottom: -5px;
+          transition: 0.3s ease-out 0.3s;
+        }
+
+        p {
+          font-family: $font-light;
+          font-size: 0.8rem;
+          transition: 0.3s ease-out 0.1s;
+        }
       }
 
-      p {
-        font-family: $font-light;
-        font-size: 0.8rem;
-        transition: 0.3s ease-out 0.1s;
+      &:hover h1 {
+        color: $third-color;
       }
-    }
 
-    &:hover h1 {
-      color: $third-color;
-    }
-
-    &:hover p {
-      font-weight: 600;
+      &:hover p {
+        font-weight: 600;
+      }
     }
   }
 

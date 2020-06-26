@@ -70,8 +70,6 @@
   }
 
   .experience {
-    padding-bottom: 5%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.623);
     h5 {
       padding-top: 3%;
     }
@@ -81,47 +79,6 @@
       margin-top: 1%;
       img {
         margin: 0 15px;
-      }
-    }
-  }
-
-  .footer {
-    margin-top: 5%;
-    .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .logo-container {
-        .logo {
-          font-size: 2rem;
-          font-family: $font-bold;
-          user-select: none;
-          &:hover {
-            color: $third-color;
-            cursor: pointer;
-          }
-        }
-
-        p {
-          font-size: 0.8rem;
-          font-family: $font-thin;
-        }
-      }
-
-      .media-social {
-        width: 30%;
-        display: flex;
-        justify-content: space-around;
-
-        img {
-          user-select: none;
-
-          &:hover {
-            opacity: 0.5;
-            cursor: pointer;
-          }
-        }
       }
     }
   }

@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { TweenLite, Power3, gsap } from "gsap";
+import React from "react";
+import { TweenLite, Power3 } from "gsap";
 
 import Burger from "./../../atoms/Burger";
 
@@ -47,42 +47,57 @@ export default function Navbar() {
   const setToActive = () => {
     const burgerIcon = document.querySelector(".burger-container");
     const navMenu = document.querySelector(".navbar-container");
-    const All = document.getElementsByTagName("body");
-    // console.log(All[0]);
+    const Logo = document.querySelector(".logo");
+    const mainMenu = document.querySelector(".main-menu");
 
     if (burgerIcon.classList.contains("active")) {
       burgerIcon.classList.remove("active");
       navMenu.classList.remove("show");
       hideMenu(navMenu);
-      All[0].style.overflow = "auto";
+      Logo.style.color = "black";
+      mainMenu.style.zIndex = 2;
     } else {
       burgerIcon.classList.add("active");
       navMenu.classList.add("show");
       showMenu(navMenu);
-      All[0].style.overflow = "hidden";
+      Logo.style.color = "white";
+      mainMenu.style.zIndex = 1;
     }
   };
 
   return (
     <>
-      <div className="navbar-container">
-        <h1>Cooming Soon</h1>
-      </div>
-      <div className="container-nav">
-        <div className="left-menu">
-          <div className="logo">aznaqCre.</div>
-          <div className="main-menu">
+      <aside className="navbar-container">
+        <div className="nav-menu-container">
+          <section className="main-menu-nav">
+            <ul>
+              <li>Work</li>
+              <li>About</li>
+            </ul>
+          </section>
+          <section className="list-about">
+            <h3>List</h3>
+            <h3>List</h3>
+            <h3>List</h3>
+            <h3>List</h3>
+          </section>
+        </div>
+      </aside>
+      <nav className="container-nav">
+        <section className="left-menu">
+          <section className="logo">aznaqCre.</section>
+          <section className="main-menu">
             <ul>
               <li onClick={work}>WORK</li>
               <li onClick={about}>ABOUT</li>
             </ul>
-          </div>
-        </div>
-        <div className="right-menu">
+          </section>
+        </section>
+        <section className="right-menu">
           <div className="contact-btn">Contact</div>
           <Burger change={setToActive} />
-        </div>
-      </div>
+        </section>
+      </nav>
     </>
   );
 }

@@ -28,10 +28,6 @@
     }
   }
 
-  #connect-container {
-    height: 70vh !important;
-  }
-
   .logo-list {
     img {
       padding: 10px 0;
@@ -50,17 +46,41 @@
       padding: 0 20px !important;
     }
   }
+  #connect-container {
+    height: 100% !important;
 
-  .list-connect {
-    grid-template-columns: repeat(2, 280px) !important;
-    .icon-container {
-      width: 100% !important;
-      padding: 0 0 !important;
-      margin: auto !important;
+    h1 {
+      padding-top: 2rem !important;
+    }
 
-      .bg-image {
-        width: 70% !important;
-        transform: translateX(15%) !important;
+    .wrapper {
+      align-items: flex-start !important;
+      .list-connect {
+        grid-template-columns: repeat(2, 280px) !important;
+        height: 25rem !important;
+        align-items: flex-start !important;
+        transform: translateY(-10%) !important;
+        .icon-container {
+          width: 90% !important;
+          padding: 0 0 !important;
+          margin: auto !important;
+
+          .inner {
+            img {
+              width: 25%;
+              height: 25%;
+            }
+          }
+
+          p {
+            font-size: 0.6rem;
+          }
+
+          .bg-image {
+            width: 70% !important;
+            transform: translateX(15%) !important;
+          }
+        }
       }
     }
   }

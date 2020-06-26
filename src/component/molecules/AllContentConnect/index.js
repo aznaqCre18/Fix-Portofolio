@@ -12,13 +12,14 @@ import {
 
 export default function index() {
   return (
-    <div className="wrapper">
-      <div className="list-connect">
+    <article className="wrapper">
+      <section className="list-connect">
         <ContentConnect
           icon={Medium}
           content="to see articles about what I have learned"
           link={Link}
           delay="0"
+          href="https://medium.com/@azizaqibs"
         />
 
         <ContentConnect
@@ -26,6 +27,7 @@ export default function index() {
           content="To see my experiment program about frontend"
           link={Link}
           delay="200"
+          href="https://codesandbox.io/u/aznaqCre18"
         />
 
         <ContentConnect
@@ -33,6 +35,7 @@ export default function index() {
           content="To see my profile and all about me"
           link={Link}
           delay="400"
+          href="https://www.linkedin.com/in/aziz-aznaq-cre/"
         />
 
         <ContentConnect
@@ -40,8 +43,9 @@ export default function index() {
           content="To see all my Design Web or Mobile Application"
           link={Link}
           delay="600"
+          href="https://dribbble.com/aznaq18"
         />
-      </div>
-    </div>
+      </section>
+    </article>
   );
 }

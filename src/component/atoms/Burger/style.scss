@@ -1,6 +1,7 @@
 .burger-container {
   box-sizing: border-box;
   position: relative;
+  z-index: 1;
   .line {
     z-index: 1;
     width: 24px;
@@ -28,7 +29,7 @@
 .active {
   box-sizing: border-box;
   transition: 0.5s cubic-bezier(0.2, -0.55, 0.45, 1.53);
-
+  z-index: 1;
   &::after {
     content: "";
     position: absolute;

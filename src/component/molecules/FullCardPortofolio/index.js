@@ -4,21 +4,28 @@ import "aos/dist/aos.css";
 
 import CardImage from "./../../atoms/portofolioCard";
 
-const CardComp = (props) => {
+const CardComp = ({ link, aos, img, title, type, stack }) => {
   useEffect(() => {
     AOS.init({
       duration: 500,
     });
   }, []);
+
   return (
-    <div className="container-full-card" data-aos={props.aos}>
-      <CardImage img={props.img} alt={props.title} />
-      <div className="content">
-        <h1>{props.title}</h1>
-        <p>{props.type}</p>
-        <p>{props.stack}</p>
+    <a href={link}>
+      <div
+        className="container-full-card"
+        data-aos={aos}
+        // onClick={() => goingTo(link)}
+      >
+        <CardImage img={img} alt={title} />
+        <div className="content">
+          <h1>{title}</h1>
+          <p>{type}</p>
+          <p>{stack}</p>
+        </div>
       </div>
-    </div>
+    </a>
   );
 };
 
