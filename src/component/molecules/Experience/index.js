@@ -3,9 +3,9 @@ import React from "react";
 function Experience({ Bs, Html, Sass, Css, Gql, ReactJs, VsCode, Figma, Js }) {
   return (
     <article className="experience">
-      <h5 data-aos="fade-right" data-aos-duration="1000">
+      <h4 data-aos="fade-right" data-aos-duration="1000">
         I EXPERIENCE IN
-      </h5>
+      </h4>
       <figure className="logo-list">
         <img
           src={VsCode}
